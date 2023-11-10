@@ -45,7 +45,7 @@ resource "aws_subnet" "public_subnet_az2" {
   }
 }
 
-# create route table and add public route
+# create route table and add public route through  internet gateway
 resource "aws_route_table" "public_route_table" {
   vpc_id       = aws_vpc.vpc.id
 
